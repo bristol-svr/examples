@@ -1,0 +1,17 @@
+{
+  "name": "examples",
+  "module": "index.ts",
+  "type": "module",
+  "dependencies": {
+    "vary": "^1.1.2",
+    "@colstonjs/core": "latest",
+    "@colstonjs/cors": "latest"
+  },
+  "devDependencies": {
+    "@types/bun": "latest",
+    "@types/vary": "^1.1.3"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  }
+}

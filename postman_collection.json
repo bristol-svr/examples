@@ -1,0 +1,140 @@
+{
+	"info": {
+		"_postman_id": "b12fc21b-9fc8-4269-acc1-5be36f8b42c7",
+		"name": "examples/api",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "4784559"
+	},
+	"item": [
+		{
+			"name": "api",
+			"item": [
+				{
+					"name": "Get a single note",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/note/L4JPI2tLmXMpwmaPcUZZlfuLljW7JYPP2hfmYcmSQ",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								"note",
+								"L4JPI2tLmXMpwmaPcUZZlfuLljW7JYPP2hfmYcmSQ"
+							],
+							"query": [
+								{
+									"key": "",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Post a single note",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"New note Note one\",\n    \"note\": \"this is my first test note\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/v1/note"
+					},
+					"response": []
+				},
+				{
+					"name": "Get all notes",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/v1/notes"
+					},
+					"response": []
+				},
+				{
+					"name": "Delete single note",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "http://127.0.0.1:8000/api/v1/?id=L4JPI2tLmXMpwmaPcUZZlfuLljW7JYPP2hfmYcmSQ",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8000",
+							"path": [
+								"api",
+								"v1",
+								""
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "L4JPI2tLmXMpwmaPcUZZlfuLljW7JYPP2hfmYcmSQ"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request ID",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/request-id"
+					},
+					"response": []
+				},
+				{
+					"name": "Request Count",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "http://127.0.0.1:8000/api/count/"
+					},
+					"response": []
+				},
+				{
+					"name": "Patch",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"id\": \"L4JPI2tLmXMpwmaPcUZZlfuLljW7JYPP2hfmYcmSQ\",\n    \"title\": \"Edited Note Title zero\",\n    \"note\": \"Edited Note Content xy.\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "http://127.0.0.1:8000/api/v2/note"
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
